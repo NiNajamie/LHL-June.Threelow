@@ -56,5 +56,20 @@
     }
 }
 
+-(void)resetDice {
+    [self.heldDice removeAllObjects];
+    NSLog(@"All die reset!");
+}
+
+// adding score
+- (int)currentScore {
+    
+    int total = 0;
+    for (Dice *score in self.heldDice) {
+        total = total + score.value;
+    }
+    return total;
+}
+
 
 @end

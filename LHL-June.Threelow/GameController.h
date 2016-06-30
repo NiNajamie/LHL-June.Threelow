@@ -21,4 +21,8 @@
 
 - (void)showAllDie;
 
+- (void)resetDice;
+
+- (int)currentScore;
+
 @end
